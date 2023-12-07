@@ -1,0 +1,121 @@
+@import 'variables';
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    font-size: calc(10px + 2vmin);
+
+    #quote-background{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+
+    #quote-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 425px;
+        background-color: white;
+        border-radius: 5px;
+
+        @media (max-width: 4000px) {
+            width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+
+        #text{
+
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            h1{
+                text-align: center;
+                font-weight: bold;
+                font-size: 1em;
+            }
+           
+        }
+        #author{
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            h2{
+                text-align: center;
+                font-weight: normal;
+                font-size: 0.5em;
+            }
+        }
+
+        #buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 50px;
+            
+            #new-quote{
+                margin-right: 50px;
+            }
+
+            #sharing-buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-left: 50px;
+                width: 100px;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg{
+                    
+                        path{
+                            fill: white;
+                        }
+                    }
+                }
+
+                #tweet-quote{
+                    margin-right: 10px;
+                    width: 100px;
+                }
+
+            }
+
+            button{
+                background-color: '';
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+                
+            }
+
+        }
+    }
+}
+
+}
